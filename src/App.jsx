@@ -1,11 +1,18 @@
 import { useState } from 'react'
 import './App.css'
+import NavBar from './components/Navbar'
+import Hero from './components/Hero'
+import Highlights from './components/Highlights'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <h1 className='text-3xl font-bold underline'>  Hello World</h1>
+    <main className='bg-black'>
+      <NavBar />
+      <Hero />
+      <Highlights />
+    </main>
   )
 }
 
